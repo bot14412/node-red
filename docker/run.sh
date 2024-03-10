@@ -5,4 +5,4 @@ if [ -z "$( id -u node 2> /dev/null )" ]; then
     adduser -D -u "$USER_UID" -G users -g node node
 fi
 
-exec su node -c "/usr/local/bin/node-red -u /data -p 8080"
+exec su node -c "/usr/local/bin/node-red -u /data -p $PORT"

@@ -1,6 +1,7 @@
 FROM alpine:latest
 WORKDIR /app
 
+ENV PORT=
 ENV USER_UID=
 ENV USER_GID=
 EXPOSE 8080
